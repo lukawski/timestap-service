@@ -33,4 +33,6 @@ app.use('/:date', (req, res) => {
   res.send(responseObject)
 })
 
-app.listen(3000)
+var port = process.port || 3000
+
+app.listen(port)
